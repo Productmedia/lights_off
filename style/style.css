@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(86, 78, 78);
+    color: #d1e4f4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding:1fr;
+    width: 60vw;
+    height: 80vh;
+    gap: 1em;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cell {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(70, 70, 70);
+}
+
+.light {
+    background-color: #d1e4f4;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.cell:hover {
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+
+    main {
+        position: absolute;
+        bottom:40px;
+        width: 95vw;
+        height:50vh;
+
+    }
+}
